@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="OrderMapper2">
+
+	<!-- 전체 주문 내역 조회 -->
+	<select id="listOrder" resultType="order">
+		SELECT * FROM order_view
+		 WHERE mname LIKE '%'||#{mname}||'%'
+		 ORDER BY result, orseq DESC
+	</select>
+	
+	<!-- 주문완료 처리 -->
+	<update id="updateOrderResult">
+		UPDATE order_detail
+		   SET result = '2'
+		 WHERE ordetailseq=#{ordetailseq}  
+	</update>
+	
+	<!-- 제품 판매 실적 조회 -->
+	<resultMap id="salesMap" type="com.farm.biz.dto.SalesQuantity">
+		<result column="pname" property="pname"></result>
+		<result column="sales_count" property="quantity"></result>
+	</resultMap>
+	
+	<select id="listProductSales" resultMap="salesMap">
+		SELECT pname, sum(quantity) as sales_count
+		  FROM order_view
+		 WHERE result='2' 
+		 GROUP BY pname
+	</select>
+	
+</mapper>

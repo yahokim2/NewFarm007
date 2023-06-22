@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="CartMapper">
+
+	<insert id="insertCart">
+		INSERT INTO cart(ctseq, userid, pdseq, quantity)
+		VALUES(cart_seq.NEXTVAL, #{userid}, #{pdseq}, #{quantity})
+	</insert>
+	
+	<select id="listCart" resultType="cart">
+		SELECT * FROM cart_view WHERE userid=#{userid}
+	</select>
+	
+	<delete id="deleteCart">
+		DELETE cart WHERE ctseq=#{ctseq}
+	</delete>
+	
+	<!--  result 갱신 1 →2 -->
+	<update id="updateCart">
+		UPDATE cart SET result='2' WHERE ctseq=#{ctseq}
+	</update>
+	
+</mapper>
