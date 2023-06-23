@@ -18,8 +18,9 @@
 		<header>			
 			<div id="logo">
 				<a href="admin_login_form"> 
-					<img style="width:800px" src="admin/images/bar_01.gif">
-					<img src="admin/images/text.gif">
+<!-- 					<img style="width:800px" src="admin/images/bar_01.gif"> -->
+<!-- 					<img src="admin/images/text.gif"> -->
+				        <img style="width:800px; display:block; margin:auto;" src="admin/images/bar_admin1.jpg">
 				</a>
 			</div>	
 			<input class="btn" type="button"  value="logout"  style="float: right;"

@@ -25,16 +25,19 @@ function admin_check()
 </head>
 
 <body>
-  <div id="wrap_sub">
+  <div id="wrap_AdLogin">
     <header>      
       <div id="logo">
         <a href="admin_login_form"> 
-        <img src="admin/images/bar_01.gif" style="float:left">
-        <img src="admin/images/text.gif">
+<!--         <img src="admin/images/bar_01.gif" style="float:left"> -->
+<!--         <img src="admin/images/text.gif"> -->
+        <img style="width:700px; display:block; margin:auto;" src="admin/images/bar_admin1.jpg">
         </a>
       </div>      
     </header>
     <div class="clear"></div>
+    
+    
     <article>
       <div id="loginform">
       <form name="frm" method="post" action="admin_login">
