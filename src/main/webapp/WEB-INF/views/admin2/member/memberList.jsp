@@ -50,9 +50,9 @@ function go_member_exit() {
 <br>
 <table id="orderList">
   <tr>
-    <th> 아이디 (미사용여부) </th>    <th> 이름 </th>
+    <th> ID(미사용) </th>    <th> 이름 </th>
     <th> 이메일 </th>             <th> 우편번호 </th>  
-    <th> 주소 </th>  <th> 전화 </th> <th> M-메일수신 </th> <th> 가입일 </th>
+    <th> 주소 </th>  <th> 전화	</th> <th> M-메일 </th> <th> 가입일 </th>
   </tr>
   <c:forEach items="${memberList}" var="memberVO">  
   <tr>
@@ -93,8 +93,8 @@ function go_member_exit() {
   </c:forEach>
 </table>
 
-  <input type="button" class="btn" style="width: 200px"
-      value="탈퇴후보(미사용) 등록" onClick="go_member_exit()">
+  <input type="button" class="btn" style="width: 150px"
+      value="미사용(탈퇴후보) 처리" onClick="go_member_exit()">
 
 
 </form>

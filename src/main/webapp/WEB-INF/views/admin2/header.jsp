@@ -18,13 +18,19 @@
 		<header>			
 			<div id="logo">
 				<a href="admin_login_form"> 
-<!-- 					<img style="width:800px" src="admin2/images/bar_01.gif"> -->
-					<img style="width:900px" src="admin2/images/005.jpg">
+
+					<img style="width:700px" src="admin2/images/005.jpg" class="admin_img21"><br>
 					
-					<img src="admin2/images/text.gif">
+ 					<img  style="height: 15px;" src="admin2/images/admin_home.jpg" class="admin_img22"> 
 				</a>
 			</div>	
-			<input class="btn" type="button"  value="logout"  style="float: right;"
-			   onClick="location.href='admin_logout'">			
+			
+			<div id="logoutimg">
+				<a href="admin_logout"> 
+					<img style="float: right;" src="admin2/images/exit.jpg" class="admin_img23"><br>
+				</a>
+			</div>	
+<!-- 			<input class="btn" type="button"  value="logout"  style="float: right;" -->
+<!-- 			   onClick="location.href='admin_logout'">			 -->
 		</header>
 		<div class="clear"></div>
