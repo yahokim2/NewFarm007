@@ -170,7 +170,7 @@ th {
 }
 
 #loginform {
-	margin-left: 400px;
+	margin-left: 370px;
 }
 
 table#productList {
@@ -421,3 +421,12 @@ div.reviewdiv table.reviewtable {
 	font-size: 10pt;
 	text-align: center;
 }
+
+/* hjh0623 추가 or 보완 */
+#wrap_AdLogin {
+	width: 971px;
+/* 	text-align: center; */
+	margin: auto;
+	min-height: 460px;
+}
+/* ~~~~~~~~~~~~~~~~~ */

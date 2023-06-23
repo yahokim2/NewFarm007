@@ -97,7 +97,7 @@ public class AdminController {
 	
 	@RequestMapping("/admin_product_detail")
 	public String adminProductDetail(Criteria cri, ProductVO vo, Model model) {
-		String[] kindList = {"", "과일", "채소", "곡물", "견과류"};
+		String[] kindList = {"", "과일", "채소", "곡물", "견과류"};	// DB값 1,2,3,4만 나타남
 		
 		ProductVO product = productService.getProduct(vo);
 		model.addAttribute("productVO", product);
@@ -111,7 +111,7 @@ public class AdminController {
 	
 	@GetMapping("/admin_product_write_form")
 	public String adminProductWriteView(Model model) {
-		String[] kindList = {"", "과일", "채소", "곡물", "견과류"};
+		String[] kindList = {"과일", "채소", "곡물", "견과류"};
 		
 		model.addAttribute("kindList", kindList);
 		return "admin/product/productWrite";
@@ -178,10 +178,11 @@ public class AdminController {
 		    fileName = "default.jpg";
 		    vo.setImage(fileName);
 		}
+		
+		System.out.println("ProductVO :"+vo);	// hjh-test:0620
+		System.out.println("image_path(1)=" + image_path);
 //---------------------------------------------------------
 		// 입력한 상품정보 저장
-		System.out.println("ProductVO :"+vo);	// hjh-test:0620
-		
 		productService.insertProduct(vo);
 		
 		return "redirect:admin_product_list";
