@@ -31,6 +31,6 @@
 				</a>
 			</div>	
 <!-- 			<input class="btn" type="button"  value="logout"  style="float: right;" -->
-<!-- 			   onClick="location.href='admin_logout'">			 -->
+<!-- 			   onClick="location.href='admin_logout'">		sky_img	 -->
 		</header>
 		<div class="clear"></div>

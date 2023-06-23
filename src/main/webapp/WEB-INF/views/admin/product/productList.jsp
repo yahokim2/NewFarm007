@@ -8,15 +8,16 @@
 <form name="frm" id="prod_form" method="post">
 <table>
   <tr>
-  <td width="642">
-      상품명 
-     <input type="text" name="key" id="key">
-     <input class="btn" type="button" name="btn_search" value="검색" onClick="go_search()">
-     <input class="btn" type="button" name="btn_write" value="상품등록" onClick="go_wrt()">
-     <input class="btn" type="button" name="btn_chart" value="상품별 실적" onClick="location.href='admin_sales_record_form'">
-  </td>
+	  <td width="642">
+	      상품명 
+	     <input type="text" name="key" id="key">
+	     <input class="btn" type="button" name="btn_search" value="검색" onClick="go_search()">
+	     <input class="btn" type="button" name="btn_write" value="상품등록" onClick="go_wrt()">
+	     <input class="btn" type="button" name="btn_chart" value="상품별 실적" onClick="location.href='admin_sales_record_form'">
+	  </td>
   </tr>
 </table>
+
 <table id="productList">
     <tr>
         <th>번호</th><th>상품명</th><th>원산지</th><th>원가</th><th>판매가</th><th>등록일</th><th>사용유무</th>
