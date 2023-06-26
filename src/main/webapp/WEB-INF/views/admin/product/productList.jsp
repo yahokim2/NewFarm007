@@ -36,7 +36,8 @@
       <td height="23" align="center">${status.count}</td>
       <td style="text-align: left; padding-left: 30px; padding-right: 0px;">   
        <a href="#" onclick="go_detail('${criteria.pageNum}','${criteria.rowsPerPage}','${productVO.pdseq}')"> 
-    	 ${productVO.name}     
+	<%--hjh  	 ${productVO.name}      --%>
+			<span style="color: blue; text-decoration: underline;">${productVO.name}</span>
    		</a>
    	  </td>
       <td>${productVO.origin}</td>

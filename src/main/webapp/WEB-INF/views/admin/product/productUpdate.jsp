@@ -38,7 +38,7 @@
   <tr>
     <th>원산지</th>
     <td width="343" colspan="5">
-      <input type="text" name="origin" id="origin" size="47" maxlength="100" value="${productVO.name}">
+      <input type="text" name="origin" id="origin" size="47" maxlength="100" value="${productVO.origin}">
     </td>
   </tr>
 <!-- ~~~~~~~~~~~~~~~ -->  
