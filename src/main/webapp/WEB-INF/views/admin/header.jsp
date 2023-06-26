@@ -20,7 +20,9 @@
 				<a href="admin_login_form"> 
 <!-- 					<img style="width:800px" src="admin/images/bar_01.gif"> -->
 <!-- 					<img src="admin/images/text.gif"> -->
-				        <img style="width:800px; display:block; margin:auto;" src="admin/images/bar_admin1.jpg">
+<!-- hjh 				        <img style="width:800px; display:block; margin:auto;" src="admin/images/bar_admin1.jpg"> -->
+					<img style="width:700px" src="admin2/images/005.jpg" class="admin_img21"><br>
+ 					<img  style="height: 15px;" src="admin2/images/admin_home.jpg" class="admin_img22"> 
 				</a>
 			</div>	
 			<input class="btn" type="button"  value="logout"  style="float: right;"

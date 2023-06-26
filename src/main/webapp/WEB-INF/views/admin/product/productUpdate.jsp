@@ -38,7 +38,7 @@
   <tr>
     <th>원산지</th>
     <td width="343" colspan="5">
-      <input type="text" name="origin" id="origin" size="47" maxlength="100" value="${productVO.name}">
+      <input type="text" name="origin" id="origin" size="47" maxlength="100" value="${productVO.origin}">
     </td>
   </tr>
 <!-- ~~~~~~~~~~~~~~~ -->  
@@ -97,7 +97,7 @@
   </tr>    
 </table>
 <input class="btn" type="button" value="수정" onClick="go_mod_save('${productVO.pdseq}')">           
-<input class="btn" type="button" value="취소" onClick="go_mov()">
+<input class="btn" type="button" value="취소" onClick="location.href='admin_product_list'">	<!--hjh0626 onClick="go_mov()" -->
 </form> 
 </article>
 <%@ include file="../footer.jsp"%>

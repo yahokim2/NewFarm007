@@ -3,7 +3,11 @@ header {
 }
 
 body {
-	background-color: white;
+/* 	background-color: white; */
+	background-color: aquamarine;
+ 	background-image: url("../images/sky_img.jpg"); 
+ 	background-size: cover;
+
 	margin: 0;
 	padding: 0;
 	font-size: 0.75em;
@@ -23,6 +27,7 @@ a:hover {
 }
 
 #wrap {
+
 	width: 971px;
 	text-align: center;
 	margin: 0px;
@@ -146,7 +151,9 @@ article {
 }
 
 th {
-	background-color: #E4E4E4;
+/* hjh0623 	background-color: #E4E4E4; */
+	background-color: rgba(255, 0, 0, 0.1);  
+	border-radius: 30px;
 }
 
 #main_img {
@@ -350,7 +357,7 @@ table#orderList {
 
 nav#sub_menu {
 	float: left;
-	margin-right: 10px;
+ 	margin-right: 30px;	/* hjh0623 10 > 30 */
 }
 
 nav#sub_menu ul li {
@@ -378,7 +385,7 @@ nav#sub_menu h1 {
 }
 
 nav#sub_menu ul {
-	margin-left: -20px;
+	margin-left: -40px;	/* hjh0623 -20 > -40 */
 }
 
 /* 영화-> 리뷰 테이블 css */
@@ -424,9 +431,11 @@ div.reviewdiv table.reviewtable {
 
 /* hjh0623 추가 or 보완 */
 #wrap_AdLogin {
+	background-color: rgba(255, 255, 255, 0.1); /* <- white */
+	
 	width: 971px;
 /* 	text-align: center; */
 	margin: auto;
-	min-height: 460px;
+	height: 320px;
 }
 /* ~~~~~~~~~~~~~~~~~ */

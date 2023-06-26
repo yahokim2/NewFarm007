@@ -31,7 +31,7 @@ function admin_check()
         <a href="admin_login_form"> 
 <!--         <img src="admin/images/bar_01.gif" style="float:left"> -->
 <!--         <img src="admin/images/text.gif"> -->
-        <img style="width:700px; display:block; margin:auto;" src="admin/images/bar_admin1.jpg">
+        <img style="width:700px;  display:block; margin:auto;" src="admin/images/bar_admin1.jpg">
         </a>
       </div>      
     </header>
@@ -45,18 +45,31 @@ function admin_check()
         <tr>
           <td> 아 이 디 </td>
           <td> <input type="text" id="workId" name="aid" size="10" value="admin"></td>
+          <td></td>
         </tr>
         <tr>
           <td> 비밀번호 </td>
           <td> 
             <input type="password" id="workPw" name="pwd" size="10" value="admin">
           </td>
+          <td></td>
         </tr>
         <tr align="center" >
-          <td  colspan="2">          
-            <input class="btn" type="submit" value="업무 로그인" onclick="return admin_check()"><br><br>
-            <h4 style="color:red">${message}</h4>
-          </td>
+<!--           <td  colspan="2">           -->
+<!--             <input class="btn" type="submit" value="업무 로그인" onclick="return admin_check()"><br><br> -->
+<%--             <h4 style="color:red">${message}</h4> --%>
+<!--           </td> -->
+			<td colspan="2">
+	            <input class="btn" type="submit" value="업무 로그인" onclick="return admin_check()" style="background-color: black; color: white;">
+<%-- 	            <h4 style="color:red">${message}</h4> --%>
+					${message}
+			</td>
+			<td>
+				<input class="btn" type="reset"  value="초기 화면" onclick="location.href='index'" style="background-color: black; color: white;"> 
+<%-- 	            <h4 style="color:blue">${message}</h4> --%>
+					${message}
+			</td>
+<!-- ~~~~~~~~~~~ -->
         </tr>
       </table>
       </form>
