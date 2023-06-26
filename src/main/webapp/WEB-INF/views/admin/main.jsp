@@ -31,7 +31,7 @@ function admin_check()
         <a href="admin_login_form"> 
 <!--         <img src="admin/images/bar_01.gif" style="float:left"> -->
 <!--         <img src="admin/images/text.gif"> -->
-        <img style="width:700px; display:block; margin:auto;" src="admin/images/bar_admin1.jpg">
+        <img style="width:700px;  display:block; margin:auto;" src="admin/images/bar_admin1.jpg">
         </a>
       </div>      
     </header>
