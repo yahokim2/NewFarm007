@@ -30,7 +30,9 @@
       </td>
       <td> 
       <a href="#" onClick="javascript:go_view('${qnaVO.qaseq}')">
-        ${qnaVO.subject} 
+<%--         ${qnaVO.subject}  --%>
+		<span style="color: blue; text-decoration: underline;">${qnaVO.subject}</span>
+
       </a>
       </td>
       <td> ${qnaVO.userid} </td>
