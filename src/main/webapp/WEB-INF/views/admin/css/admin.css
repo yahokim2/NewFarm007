@@ -431,7 +431,7 @@ div.reviewdiv table.reviewtable {
 
 /* hjh0623 추가 or 보완 */
 #wrap_AdLogin {
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.1); /* <- white */
 	
 	width: 971px;
 /* 	text-align: center; */
