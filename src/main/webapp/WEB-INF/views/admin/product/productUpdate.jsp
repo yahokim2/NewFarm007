@@ -91,7 +91,11 @@
     <td colspan="5">
       <img src="product_images/${productVO.image}" width="200pt">     
       <br>
-      <input type="file" name="product_image" id="product_image">
+<!--       <input type="file" name="product_image" id="product_image"> -->
+	  <input type="file" name="product_image" id="product_image" onchange="previewImage(event)">
+	    선택한 이미지 미리보기 <img id="preview" src="#" alt="미리보기" style="max-width: 100px; max-height: 100px;">
+	  <br>
+
       <input type="hidden" name="image" value="${productVO.image}">
     </td> 
   </tr>    

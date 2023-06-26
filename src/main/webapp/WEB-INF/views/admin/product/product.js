@@ -159,3 +159,14 @@ function set_bestyn() {
 	}
 	console.log("bestyn="+document.getElementById("bestyn").value);
 }
+
+function previewImage(event) {
+	  var input = event.target;
+	  var preview = document.getElementById('preview');
+	  var file = input.files[0];
+	  var reader = new FileReader();
+	  reader.onload = function() {
+	    preview.src = reader.result;
+	  }
+	  reader.readAsDataURL(file);
+}

@@ -57,7 +57,12 @@
     <th>상품이미지</th>
     <td width="343" colspan="5">
 <!--  [2] 파일 업로드를 하기 위한 input 태그는 타입 속성 값을 file로 지정해야 한다.  -->
-      <input type="file" name="product_image" id="product_image">
+<!--       <input type="file" name="product_image" id="product_image"> -->
+	  <input type="file" name="product_image" id="product_image" onchange="previewImage(event)">
+<!-- 	  <br> -->
+<!-- 	  <img id="preview" src="#" alt="미리보기" style="max-width: 200px; max-height: 200px;"> -->
+	    선택한 이미지 미리보기 <img id="preview" src="#" alt="미리보기" style="max-width: 100px; max-height: 100px;">
+		<br>
     </td>
   </tr>    
 
