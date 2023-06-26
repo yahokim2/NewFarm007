@@ -2,7 +2,7 @@
   pageEncoding="UTF-8"%>
     
 <nav id="sub_menu">
-<h1>Admin Setting</h1>
+<h1>관리자 메뉴</h1> <!-- Admin Setting -->
 <ul>
 <li><a href='admin_product_list'> 상품리스트</a></li>
 <li><a href='admin_order_list'> 주문리스트</a></li>

@@ -203,8 +203,8 @@ th, td{
 
 table#orderList {
 	border-collapse: collapse; /* border 사이의 간격 없앰 */
-/* 	border-top: 2px solid #fff; */
-	border-bottom: 1px solid #fff;
+	border-top: 2px solid #333;
+	border-bottom: 1px solid #333;
 	width: 85%; /* 전체 테이블 길이 설정 */
 	margin-left: 100px;
 	margin-bottom: 20px;
@@ -354,7 +354,7 @@ table#orderList {
 
 nav#sub_menu {
 	float: left;
-	margin-right: 0px;
+ 	margin-right: 30px;	/* hjh0623 0 > 30 */
 }
 
 nav#sub_menu ul li {
@@ -382,7 +382,7 @@ nav#sub_menu h1 {
 }
 
 nav#sub_menu ul {
-	margin-left: -20px;
+	margin-left: -40px;	/* hjh0623 -20 > -40 */
 }
 
 /* 영화-> 리뷰 테이블 css */
