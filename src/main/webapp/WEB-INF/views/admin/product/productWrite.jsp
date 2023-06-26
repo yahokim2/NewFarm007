@@ -62,7 +62,9 @@
   </tr>    
 
 </table>
-<input class="btn" type="button" value="등록" onClick="go_save()">
+
+<input class="btn" type="button" value="등록" onClick="go_save()">          
+
 <input class="btn" type="button" value="취소" onClick="location.href='admin_product_list'">	<!--hjh0626 onClick="go_mov()" -->
 </form> 
 </article>
